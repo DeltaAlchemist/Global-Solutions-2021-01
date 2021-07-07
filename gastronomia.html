@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/gastronomia.css">
+    <title>Gastronomia</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="flex-column" id="footer">
+            
+                      
+        <a href="#"><i class="fab redes-sociais fa-instagram"></i></a>
+        <a href="#"><i class="fab redes-sociais fa-twitter"></i></a>
+        <a href="#"><i class="fab redes-sociais fa-youtube"></i></a>
+        <a href="#"><i class="fab redes-sociais fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab redes-sociais fa-pinterest-p"></i></a>
+        
+
+        
+      </div>  
+
+    <header>
+        <div class="flex-row" id ="banner">
+            <div class="flex-row">
+                <img id="logo" src="img/logo_branco.png" alt="Portal Gulliver">
+            </div>
+        </div>
+    </header>
+   <!--NavBar-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo_branco_cropped.png" alt="Portal Gulliver" width="200">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="dicas.html">Dicas Úteis</a>
+                <a class="nav-link active" href="gastronomia.html">Gastronomia</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<br>
+<!-- Cards -->
+    
+
+<div class="row row-cols-1 row-cols-md-2 g-5">
+    <div class="col">
+      <div class="card">
+        <img src="images/famiglia-mancini.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Familia Mancini</h5>
+          <p class="card-text">Referencia em pratos italianos classicos com o ambiente reservado. <br>
+
+              
+              <i class="bi bi-currency-dollar"></i>
+              <i class="bi bi-currency-dollar"></i>
+              <i class="bi bi-currency-dollar"></i></p>
+               <br>
+
+              <h5>Avaliação</h5>
+              <div class="estrelas">
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <br>
+                  <br>
+                  <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+                  
+                  <div class="card-footer">
+                      <small class="text-muted">Endereço: Rua Avanhandava, 81, Bela Vista - Centro Histórico de São Paulo, São Paulo -SP, 01050-000 
+                          <br>
+                          <br> 
+                      Telefone: (11) 3256-4320
+                        </small>
+                        <br>
+                    </div>    
+                        <br>
+              <a href="http://www.famigliamancini.com.br" target="_blank" class="btn btn-primary">Visite o site</a>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Eataly.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Eataly</h5>
+          <p class="card-text">Referencia em pratos italianos com um espaço modero e conceitual.
+              <br>
+                     
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i></p><br> 
+          <h5>Avaliação</h5>
+          <div class="estrelas">
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <br>
+              <br>
+              <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+              
+              <div class="card-footer">
+                <small class="text-muted">Endereço: Av. Pres.Juscelino Kubitschek, 1489 - São Paulo
+                    <br>
+                    <br>
+                Tel. +55 11 3279-3300              
+              </small>
+              <br>
+            </div>
+              <br>
+
+          <a href="https://www.eataly.com.br" target="_blank" class="btn btn-primary">Visite o site</a>
+          </div>
+        </div>
+  </div>
+</div>
+    <div class="col">
+      <div class="card">
+        <img src="images/chalezinho-morumbi.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chalézinho (morumbi)</h5>
+          <p class="card-text">Com a especuialidade em culinaria europeia o Chalézinho vem com sua arquitetura de chalé suiço para agradar todos os gostos. </p>
+               
+            <i class="bi bi-currency-dollar"></i>
+            <i class="bi bi-currency-dollar"></i>
+            <i class="bi bi-currency-dollar"></i>
+            <i class="bi bi-currency-dollar"></i></p>
+           
+            
+            <h5>Avaliação</h5>
+            <div class="estrelas">
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <br>
+                <br>
+                <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+                
+                <div class="card-footer">
+                    <small class="text-muted">Endereço: Rua Itapimirum, 11 - Morumbi, São Paulo - SP, 05716-090
+                        <br>
+                        <br>
+                        Telefone: (11) 3501-9322
+                    </small> 
+                    <br>
+
+                  </div>
+                  <br>
+            <a href="https://chalezinho.com/morumbi/" target="_blank" class="btn btn-primary">Visite o site</a>
+            </div>
+          </div>
+    </div>
+  </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Terraco-Italia-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Terraço Italia</h5>
+          <p class="card-text">Com o cardapio sofisticado e variado, promete trazer mais do que uma refeição promete uma completa experiencia.</p>
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i></p> 
+          <br>
+          <br>
+          <br>
+          <h5>Avaliação</h5>
+          <div class="estrelas">
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <br>
+              <br>
+              <br> 
+              <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+              
+              <div class="card-footer">
+                <small class="text-muted">Endereço: Av. Ipiranga, 344 - 41º andar - República, São Paulo - SP, 01046-010
+                    <br>
+                    <br>
+                    Telefone: (11) 2189-2929
+                    <br>
+                </small> 
+            </div>
+                <br>
+                
+              
+          <a href="https://www.terracoitalia.com.br" target="_blank" class="btn btn-primary">Visite o site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="row row-cols-1 row-cols-md-2 g-5">
+    <div class="col">
+      <div class="card">
+        <img src="images/Fasano-Restaurante.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fasano Restaurante</h5>
+          <p class="card-text">Com o cardapio italiano esse restaurante vem com uma tendencia mais aconchegante. 
+              <br>
+              <br>
+
+              
+              <i class="bi bi-currency-dollar"></i>
+              <i class="bi bi-currency-dollar"></i>
+              <i class="bi bi-currency-dollar"></i></p>
+               <br>
+               <br>
+              
+
+              <h5>Avaliação</h5>
+              <div class="estrelas">
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <br>
+                  <br>
+                  <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+                  
+                  <div class="card-footer">
+                      <small class="text-muted">  
+                          Endereço: Rua Vittorio Fasano,  88 - São Paulo,  São Paulo
+                      <br>
+                      <br>
+                      Telefone: +55 11 3896 4000 
+                        <br>
+                      </small>
+                  </div>
+                  <br>
+
+              <a href="https://www.fasano.com.br" target="_blank" class="btn btn-primary">Visite o site</a>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/figueira-rubayat.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Figueira Rubayat</h5>
+          <p class="card-text">Um restaurante feito junto de uma figueira centenaria é um otimo ponto turistico e um maravilhoso restaurante mediterrâneo.
+              <br>
+              <br>
+                     
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i></p>
+          <br> 
+          <br> 
+          <br> 
+          
+          <h5>Avaliação</h5>
+          <div class="estrelas">
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <br>
+              <br>
+              <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+                 
+                  <div class="card-footer">
+                    <small class="text-muted">Endereço:Rua Haddock Lobo, 1738 - Jardim Paulista - São Paulo, Brasil 
+                        <br>
+                        <br>
+                    Telefone:(55) 11 3087-1399
+                </small>
+                <br>
+
+                  </div>
+                  <br>
+                  
+          <a href="http://www.gruporubaiyat.com/restaurantes.asp?abt=44&lview=pt" target="_blank" class="btn btn-primary">Visite o site</a>
+          </div>
+        </div>
+  </div>
+</div>
+    <div class="col">
+      <div class="card">
+        <img src="images/bar-estadao.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bar estadão</h5>
+          <p class="card-text">Esse bar é conhecido por ter o sanduiche de pernil mais premiado de São Paulo. Então nao preciso dizer muito né. 
+             <br>
+             <br>
+            <i class="bi bi-currency-dollar"></i>
+            <i class="bi bi-currency-dollar"></i>
+            <i class="bi bi-currency-dollar"></i></p>
+         <br>
+         <br>
+         <br>
+            <h5>Avaliação</h5>
+            <div class="estrelas">
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="star-5" name="fb" value="5"/>
+                <br>
+                <br>
+                <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+                
+                <div class="card-footer">
+                    <small class="text-muted">Endereço: Viaduto Nove de Julho, 193 - Centro Histórico de São Paulo, São Paulo - SP, 01050-060
+                        <br>
+                        <br>
+                    Telefone: (11) 3257-7121
+                    </small>
+                    <br>
+                    
+                  </div>
+                  <br>
+                  
+            <a href="http://padariabellapaulista.com.br" target="_blank" class="btn btn-primary">Visite o site</a>
+            </div>
+          </div>
+    </div>
+  </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="images/ponto-chic.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ponto chic</h5>
+          <p class="card-text">É um restaurante e bar com o ambiente bem acconchegante e que é conhecido pelo bauru alem da carta de drinks servidos no local.</p>
+          <br>
+          <br>
+          
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i></p> 
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h5>Avaliação</h5>
+          <div class="estrelas">
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              
+              <br>
+              <br>
+              <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+                 
+              <div class="card-footer">
+                <small class="text-muted">Endereço: Praça Oswaldo Cruz, 26 - Paraíso, São Paulo - SP, 04004-070
+                    <br>
+                    <br>
+                Telefone: (11) 3289-1480
+                </small>
+                <br>
+
+              </div>
+              <br>
+              
+          <a href="https://www.pontochic.com.br" target="_blank" class="btn btn-primary">Visite o site</a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="row row-cols-1 row-cols-md-2 g-2">
+    <div class="col">
+      <div class="card">
+        <img src="images/bella-paulista.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bella Paulista</h5>
+          <p class="card-text">Uma padaria 24hrs com uma experiencia unica, que vai desde café da manha até os encontros descontraidos da madrugada com os amigos. 
+
+              <br>
+              <br>
+              <i class="bi bi-currency-dollar"></i>
+              <i class="bi bi-currency-dollar"></i>
+              <i class="bi bi-currency-dollar"></i></p>
+               <br>
+               <br>
+               <br>
+
+              <h5>Avaliação</h5>
+              <div class="estrelas">
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  <label for="cm_star-5"><i class="fa"></i></label>
+                  <input type="radio" id="star-5" name="fb" value="5"/>
+                  
+                  <br>
+                  <br>
+                  <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+                     
+                  <div class="card-footer">
+                    <small class="text-muted">Endereço: Rua Haddock Lobo, 354 - Cerqueira César, São Paulo - SP, 01414-000
+                        <br>
+                    <br>
+                    Telefone: (11) 3129-8340
+                </small>
+                    <br>
+
+                  </div>
+                  <br>
+                  
+              <a href="http://padariabellapaulista.com.br" target="_blank" class="btn btn-primary">Visite o site</a>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/bar do alemao.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bar do alemão</h5>
+          <p class="card-text">É um bar centenario, com muita tradição e historia. Com um cardapio igno de um restaurante e uma carta de bebidas variadas esse é o lugar para encontrar os amigos para beber e jogar conversa fora.</p>
+              <br>
+              <br>
+                     
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i>
+          <i class="bi bi-currency-dollar"></i></p>
+          <br>
+          <br>
+          <br>
+          <br> 
+          <h5>Avaliação</h5>
+          <div class="estrelas">
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="star-5" name="fb" value="5"/>
+              <br>
+              <br>
+              <h5>Deixe seu feedback!</h5>
+                  <div class="estrelas" id="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                    <label for="cm_star-1"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                    <label for="cm_star-2"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" onclick='testarAlerta()'></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                  </div>
+                  <br>
+                 
+              <div class="card-footer">
+                <small class="text-muted">Endereço: Rua Haddock Lobo, 354 - Cerqueira César, São Paulo - SP, 01414-000
+                    <br>
+                    <br>
+                    Telefone: (11) 3129-8340
+                </small> 
+                <br>
+
+              </div>
+              <br>
+              
+          <a href="https://www.bardoalemaosp.com.br" target="_blank" class="btn btn-primary">Visite o site</a>
+          </div>
+        </div>
+  </div>
+</div>      
+</div>
+<script src="js/gastronomia.js"></script>
+</body>
+</html>
+
+
+
+
